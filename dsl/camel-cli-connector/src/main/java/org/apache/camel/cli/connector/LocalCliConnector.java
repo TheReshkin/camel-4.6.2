@@ -175,7 +175,7 @@ public class LocalCliConnector extends ServiceSupport implements CliConnector, C
             statusFile = createLockFile(lockFile.getName() + "-status.json");
             actionFile = createLockFile(lockFile.getName() + "-action.json");
             outputFile = createLockFile(lockFile.getName() + "-output.json");
-            traceFile = createLockFile(lockFile.getName() + "-trace.json");
+            traceFile = createLockFile("TEST-TEST-trace.json");
             debugFile = createLockFile(lockFile.getName() + "-debug.json");
             executor.scheduleWithFixedDelay(this::task, 0, delay, TimeUnit.MILLISECONDS);
             LOG.info("Camel JBang CLI enabled");
