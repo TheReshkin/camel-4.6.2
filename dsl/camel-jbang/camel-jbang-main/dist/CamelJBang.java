@@ -23,7 +23,9 @@
 //DEPS org.apache.camel:camel-jbang-core:${camel.jbang.version:4.6.2-SNAPSHOT}
 //DEPS org.apache.camel.kamelets:camel-kamelets:${camel-kamelets.version:4.6.0}
 
-//DEPS org.apache.camel:camel-decanter
+//DEPS org.apache.karaf.decanter.appender:org.apache.karaf.decanter.appender.loki:2.9.0
+//DEPS org.apache.karaf.decanter.collector:org.apache.karaf.decanter.collector.camel:2.9.0
+
 package main;
 
 import org.apache.camel.CamelContext;
