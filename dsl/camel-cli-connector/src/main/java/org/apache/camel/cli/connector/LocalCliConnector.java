@@ -172,6 +172,7 @@ public class LocalCliConnector extends ServiceSupport implements CliConnector, C
 
         lockFile = createLockFile(getPid());
         if (lockFile != null) {
+            String propertyValue = System.getProperty("MY_PROPERTY_NAME");
             statusFile = createLockFile(lockFile.getName() + "-status.json");
             actionFile = createLockFile(lockFile.getName() + "-action.json");
             outputFile = createLockFile(lockFile.getName() + "-output.json");
